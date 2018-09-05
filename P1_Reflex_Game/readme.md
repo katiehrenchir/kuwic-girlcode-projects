@@ -20,7 +20,7 @@ Materials Needed:
 * 2 Male-to-Female jumper wires
 
 
-##Circuit Diagram
+## Circuit Diagram for Base Project
 
 ![Image of Reflex Game Circuit](https://projects-static.raspberrypi.org/projects/python-quick-reaction-game/93cddd796428a420a0f367ca33ce6ef3689bfd7a/en/images/quick-reaction-circuit.png)
 
