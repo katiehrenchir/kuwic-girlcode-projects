@@ -1,10 +1,12 @@
 from gpiozero import LED
 from time import sleep
+from random import uniform
 
 led = LED(4)
 
 while True:
     led.on()
-    sleep(2)
+    sleep(uniform(1,4))
+    
     led.off()
-    sleep(2)
+    sleep(uniform(1,4))
