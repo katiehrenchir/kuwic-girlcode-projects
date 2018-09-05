@@ -9,9 +9,20 @@ led = LED(4)
 top_button = Button(14)
 bottom_button = Button(15)
 
+# Assign player names to buttons
+top_name = raw_input('Name of player using top button: ')
+bottom_name = raw_input('Name of player using bottom button: ')
+
+# Method to determine which player has pressed her button
+def get_winner_name(button):
+    if button.pin.number==14:
+        return top_name
+    else:
+        return bottom_name
+
 # Method to print message when a button has been pressed
 def pressed(button):
-    print(button.string.number + " has been pressed!")
+    print(get_winner_name(button) + " has won the game!")
     
 # Define behavior when either the top or
 # bottom buttons are pressed
