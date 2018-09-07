@@ -11,7 +11,7 @@ bottom_button = Button(15)
 
 # Method to print message when a button has been pressed
 def pressed(button):
-    print(button.string.number + " has been pressed!")
+    print(str(button.pin.number) + " has been pressed!")
     
 # Define behavior when either the top or
 # bottom buttons are pressed
