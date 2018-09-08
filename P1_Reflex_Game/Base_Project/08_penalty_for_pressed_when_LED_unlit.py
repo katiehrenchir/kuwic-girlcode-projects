@@ -25,7 +25,7 @@ def pressed(button):
     if led.value:
         print(get_winner_name(button) + ' won the game!')
     else:
-        print('Button was not pressed!')
+        print('LED was not lit!')
     
 # Define behavior when either the top or
 # bottom buttons are pressed
@@ -34,7 +34,7 @@ bottom_button.when_pressed = pressed
     
 # Main program
 while True:
-    on_duration = uniform(.1,.3)
+    on_duration = uniform(.3, .7)
     led.on()
     sleep(on_duration)
     
