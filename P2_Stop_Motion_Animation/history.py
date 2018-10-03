@@ -7,7 +7,12 @@ camera = PiCamera()
 camera.rotation = 180
 
 camera.start_preview()
-button.wait_for_press()
-#sleep(5)
-camera.capture('/home/pi/Desktop/image.jpg')
-camera.stop_preview()
+
+while True:
+    try:
+        button.wait_for_press()
+        #sleep(5)
+        camera.capture('/home/pi/Desktop/iamge.jpg')
+    except KeyboardInterrupt:
+        camera.stop_preview()
+        break
