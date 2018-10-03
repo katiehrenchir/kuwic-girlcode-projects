@@ -8,11 +8,14 @@ camera.rotation = 180
 
 camera.start_preview()
 
+image_number = 1
 while True:
     try:
         button.wait_for_press()
-        #sleep(5)
-        camera.capture('/home/pi/Desktop/iamge.jpg')
+        
+        # Be sure to put your images in their own folder!
+        camera.capture('/home/pi/Desktop/StopMotionImages/image%03d.jpg' % image_number)
+        image_number += 1
     except KeyboardInterrupt:
         camera.stop_preview()
         break
