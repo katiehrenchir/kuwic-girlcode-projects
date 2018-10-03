@@ -1,7 +1,7 @@
 # [Project 2 - Stop Motion Animation][1] 
 This project involves creating stop-motion animation videos using still frames captured when a button is pushed. Girls will connect a camera to their pi and then use the terminal to learn the basic ways to interact with it. Then, girls will write Python code to take photos when buttons are pressed and save them to memory with unique file names using while loops and counters. Finally, girls will use the command line to compile their still frames into a video.  
-Concepts:
 
+Concepts:
 * Circuit construction
   * PiCamera module
   * Tactile button
@@ -16,9 +16,16 @@ Concepts:
 
 
 Materials Needed:
-
-* 1 tactle push button
+* Raspberry pi camera module
+* 1 tactile push button
 * 2 Male-to-Female jumper wires
+
+## Compiling the images into a .gif
+To compile a collection of still images into a .gif file, use the following command:
+```
+ffmpeg -framerate 5 -f image2 StopMotionImages/image%03d.jpg stop_motion.gif
+```
+Note that filepath and image file names will depend on your implementation. The framerate can also be altered, in this example it is 5.
 
 
 ## Circuit Diagram for Base Project
