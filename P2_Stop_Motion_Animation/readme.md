@@ -20,6 +20,17 @@ Materials Needed:
 * 1 tactile push button
 * 2 Male-to-Female jumper wires
 
+## Checking your raspberry pi camera's functionality
+To test the preview function of your camera, run the following command. It is alright if your image is upside-down, we can correct this later with our code. 
+```
+raspistill -k
+```
+If this command does not work, ensure that your camera module is enabled. Run the following command and check to see if the 'camera' section is enabled. Ask an instructor for help if you get stumped!
+```
+sudo raspi-config
+```
+
+
 ## Compiling the images into a .gif
 To compile a collection of still images into a .gif file, use the following command:
 ```
