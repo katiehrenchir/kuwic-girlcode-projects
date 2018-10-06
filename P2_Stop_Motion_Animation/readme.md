@@ -34,7 +34,7 @@ sudo raspi-config
 ## Compiling the images into a .gif
 To compile a collection of still images into a .gif file, use the following command:
 ```
-ffmpeg -framerate 5 -f image2 StopMotionImages/image%03d.jpg stop_motion.gif
+ffmpeg -framerate 5 -f image2 -i StopMotionImages/image%03d.jpg stop_motion.gif
 ```
 Note that filepath and image file names will depend on your implementation. The framerate can also be altered, in this example it is 5.
 
