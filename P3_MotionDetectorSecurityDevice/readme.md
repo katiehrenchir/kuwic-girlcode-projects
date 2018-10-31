@@ -26,7 +26,7 @@ Note that filepath and image file names will depend on your implementation. The 
 
 ## Circuit Diagram for Connecting PIR Sensor
 
-![Image of Push Button Circuit](https://projects-static.raspberrypi.org/projects/rpi-gpio-connect-pir/f486753f7a342f6f379ea947b695541d5c793396/en/images/pir-diagram.png)
+![Image of Push Button Circuit](https://cdn.shopify.com/s/files/1/0254/2677/products/pi5_1024x1024.png)
 
 
 ## Documentation Links
