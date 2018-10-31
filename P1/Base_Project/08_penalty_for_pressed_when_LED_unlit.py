@@ -12,6 +12,7 @@ bottom_button = Button(15)
 # Assign player names to buttons
 top_name = raw_input('Name of player using top button: ')
 bottom_name = raw_input('Name of player using bottom button: ')
+sleep(2)
 
 # Method to determine which player has pressed her button
 def get_winner_name(button):
@@ -34,7 +35,7 @@ bottom_button.when_pressed = pressed
     
 # Main program
 while True:
-    on_duration = uniform(.3, .7)
+    on_duration = uniform(.3, .5)
     led.on()
     sleep(on_duration)
     

@@ -27,7 +27,7 @@ top_points = 0
 bottom_points = 0
 
 # Initialize number of points needed to win
-point_goal = 10
+point_goal = 3
 
 # Method to determine whether someone has enough points to
 # win the game
@@ -88,7 +88,7 @@ round_over = Event()
 
 # Main program
 while not winner_found(point_goal):
-    on_duration = uniform(1,5)
+    on_duration = uniform(.5,1)
     led.on()
     # Wait for the random on_duration or until
     # a player has won this round

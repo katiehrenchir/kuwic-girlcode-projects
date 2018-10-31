@@ -5,6 +5,7 @@ from gpiozero import Button
 button = Button(17)
 camera = PiCamera()
 camera.rotation = 180
+camera.resolution =(200, 200)
 
 camera.start_preview()
 
@@ -16,6 +17,3 @@ while True:
     except KeyboardInterrupt:
         camera.stop_preview()
         break
-
-
-

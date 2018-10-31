@@ -44,6 +44,7 @@ def countdown(seconds):
         print(num)
         sleep(1)
     print('GO!')
+    sleep(1) 
     
 #Print the countdown before we start the game
 countdown(countdown_length)
