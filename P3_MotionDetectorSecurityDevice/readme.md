@@ -22,7 +22,12 @@ To play a video in .h264 format, open a terminal in the directory containing you
 ```
 omxplayer test_video.h264
 ```
-Note that filepath and image file names will depend on your implementation. The framerate can also be altered, in this example it is 5.
+Note that file name will depend on your implementation. Alternatively, double click your file in a file browser, select the "Custom Command Line" tab, and enter
+```
+omxplayer %f
+```
+into the "Command line to execute" field. 
+
 
 ## Circuit Diagram for Connecting PIR Sensor
 
