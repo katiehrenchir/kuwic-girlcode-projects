@@ -14,7 +14,12 @@ This project involves creating stop-motion animation videos using still frames c
 ### [Project 3 - Motion Activated Security Device][3] 
 This project involves creating a “security” device to begin recording video when motion is detected. Girls will connect both a PIR motion sensor and a camera to their pi. The terminal will be used to learn the basics of these components. Then, the girls will write Python code to being capturing video when the PIR sensor detects motion, and write this video to memory.
 
+
+### [Project 4 - Ultrasonic Theremin][4] 
+This workshop leads girls through creating a theremin, which is an instrument controlled by the position of the musician’s hands relative to a distance sensor. Girls will connect an ultrasonic distance sensor to their pi, then write some Python code to detect the distances around it and send the pitch information to Sonic Pi. 
+
 [1]:https://projects.raspberrypi.org/en/projects/python-quick-reaction-game
 [2]:https://projects.raspberrypi.org/en/projects/push-button-stop-motion
 [3]:https://projects.raspberrypi.org/en/projects/parent-detector
+[4]:https://projects.raspberrypi.org/en/projects/ultrasonic-theremin
 
