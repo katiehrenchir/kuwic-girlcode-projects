@@ -25,5 +25,5 @@ This workshop leads girls through creating a theremin, which is an instrument co
 [2]:https://projects.raspberrypi.org/en/projects/push-button-stop-motion
 [3]:https://projects.raspberrypi.org/en/projects/parent-detector
 [4]:https://projects.raspberrypi.org/en/projects/ultrasonic-theremin
-[1]:https://projects.raspberrypi.org/en/projects/shakespearean-insult-generator/6
+[5]:https://projects.raspberrypi.org/en/projects/shakespearean-insult-generator/6
 
