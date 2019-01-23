@@ -18,8 +18,12 @@ This project involves creating a “security” device to begin recording video 
 ### [Project 4 - Ultrasonic Theremin][4] 
 This workshop leads girls through creating a theremin, which is an instrument controlled by the position of the musician’s hands relative to a distance sensor. Girls will connect an ultrasonic distance sensor to their pi, then write some Python code to detect the distances around it and send the pitch information to Sonic Pi. 
 
+### [Project 5 - Random Compliment Generator][5] 
+This workshop leads girls through creating a theremin, which is an instrument controlled by the position of the musician’s hands relative to a distance sensor. Girls will connect an ultrasonic distance sensor to their pi, then write some Python code to detect the distances around it and send the pitch information to Sonic Pi. 
+
 [1]:https://projects.raspberrypi.org/en/projects/python-quick-reaction-game
 [2]:https://projects.raspberrypi.org/en/projects/push-button-stop-motion
 [3]:https://projects.raspberrypi.org/en/projects/parent-detector
 [4]:https://projects.raspberrypi.org/en/projects/ultrasonic-theremin
+[1]:https://projects.raspberrypi.org/en/projects/shakespearean-insult-generator/6
 
