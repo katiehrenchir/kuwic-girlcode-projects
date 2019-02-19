@@ -1,4 +1,4 @@
-from guizero import App, Text, PushButton
+from guizero import App, Text, TextBox, PushButton
 import random
 
 def compliment_me():
@@ -6,12 +6,15 @@ def compliment_me():
     word2 = random.choice(adj2)
     word3 = random.choice(noun)
 
-    compilment = "Oh, Katie, you " + word1 + ", " + word2+ ", " + word3 + "!\n"
+    compilment = "Oh, " + input_box.value + ", you " + word1 + ", " + word2+ ", " + word3 + "!\n"
     return compilment
 
 def generate_new_compliment():
-    new_compliment = compliment_me()
-    message.value = new_compliment
+    message.value = compliment_me()
+    input_box.hide()
+    #button2.show()
+
+
 
 # Create lists to store our word types in
 adj1 = []
@@ -30,10 +33,12 @@ with open("words.csv", "r") as f:
         noun.append(individual_words[2].strip())
 
 
-app = App("Katie's Leslie Knope Compliment Generator", width=500, height=100)
-
+app = App("Katie's Leslie Knope Compliment Generator", width=500, height=200)
 # Things to show on our GUI
-message = Text(app, compliment_me())
-button = PushButton(app, generate_new_compliment, text="Compliment me again!")
+#message = Text(app, compliment_me())
+message = Text(app, "What is your name?")
+input_box = TextBox(app)
+button = PushButton(app, generate_new_compliment, text="Compliment me!")
+
 
 app.display()
