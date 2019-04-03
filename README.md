@@ -25,6 +25,10 @@ This workshop guides girls through coding a compliment generator using random nu
 ### [Project 6 - Silly Thoughts Twitter Bot][6] 
 This workshop guides girls through coding a Twitter bot to post silly, random, computer-generated sentences. Girls will use Python code and Twitter development tools to interact with their Twitter bot. No prior experience necessary!
 
+### Project 7 - Mini Piano 
+This workshop guides girls through coding and wiring a mini piano.
+
+
 [1]:https://projects.raspberrypi.org/en/projects/python-quick-reaction-game
 [2]:https://projects.raspberrypi.org/en/projects/push-button-stop-motion
 [3]:https://projects.raspberrypi.org/en/projects/parent-detector
