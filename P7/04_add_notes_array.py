@@ -1,7 +1,9 @@
 from gpiozero import Button
 import os
 
+
 class Key:
+    # Notice - two underscores before and after 'init'
     def __init__(self, note_name=None, pin=None):
         # Self refers to the current object - our current key
         self.note_name = note_name
@@ -13,24 +15,21 @@ class Key:
 
 def pressed():
     print("I was pressed!")
-    # Notice that every key is playing the same note right now
+    # Change "local" to "hdmi" when running on the LEEP2 TVs
     os.system("omxplayer -o local notes/c.mp3 &")
 
-# Remove the test button
 # Notice the notes strings correspond to the file names of each note
-notes = ["c", "c_sharp", "d", "d_sharp", "e", "f", "f_sharp", "g", "a", "b"]
-button_pins = [26, 19, 13, 6, 5, 11, 9, 10, 22, 27]
+# Since we have the files for any note, feel free to customize your keyboard
+notes = ["c", "d", "e", "f", "g"]
+button_pins = [26, 19, 13, 6, 5]
 # Create an empty list - we'll use this to store our keys (buttons)!
 keys = []
 
-for x in range(0,10):
-    print(x)
-    keys.append( Key(notes[x], button_pins[x]) )
-    print(keys[x].note_name)
+# Our button is wired into GPIO 26
+test_button = Button(26)
+test_button.when_pressed = pressed
 
 while True:
-    # It actually doesn't matter what you put right here, so long as it keeps
-    # the program running
-    keys[0].button.wait_for_press()
+    test_button.wait_for_press()
 
 
